@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--==================== ICONS ====================-->
+    <link rel="icon" href="assets/img/about.jpg" type="image/icon type">
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Rifal Ardiansyah</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">Rifal</a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active-link">
+                            <i class="uil uil-estate nav_icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">
+                            <i class="uil uil-user nav_icon"></i> About
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link">
+                            <i class="uil uil-file-alt nav_icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="index.html#portfolio" class="nav_link">
+                            <i class="uil uil-scenery nav_icon"></i> Portofolio
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link">
+                            <i class="uil uil-message nav_icon"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav_close" id="nav-close"></i>
+            </div>
+
+            <div class="nav_btns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_content grid">
+                    <div class="home_social">
+                        <a href="https://linkedin.com/in/rifal-ardiansyah-a62373332" target="_blank" class="home_social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="" target="_blank" class="home_social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="home_img">
+                        <div class="circle"></div>
+                        <model-viewer src="assets/model/face.glb" alt="3D Model" auto-rotate camera-controls class="model-centered">
+
+                        </model-viewer>
+                        <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+                    </div>
+                    <style>
+                        .home_img {
+        position: relative;
+        width: 20px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circle {
+        position: absolute;
+        width: 210px;
+        height: 210px;
+        background: linear-gradient(135deg, #4A90E2, #9013FE);
+        border-radius: 70%;
+        z-index: 1;
+    }
+
+    .model-centered {
+        position: absolute;
+        width: 300px; /* Atur ukuran model */
+        height: 300px;
+        z-index: 3;
+    }
+                    </style>
+
+                    <div class="home_data">
+                        <h1 class="home_title">Hi, I'am Rifal</h1>
+                        <h3 class="home_subtitle"><span class="input"></span></h3>
+                        <p class="home_description">Saya adalah seorang Software Engineer yang memiliki keahlian di bidang Front-End Development, UI/UX Design, Data Analysis, dan 3D Modeling.</p>
+                        <a href="#contact" class="button button--flex">
+                            Contact Me <i class="uil uil-message button_icon "></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home_scroll">
+                    <a href="#about" class="home_scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home_scroll-mouse"></i>
+                        <span class="home_scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down home_scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section_title">About Me</h2>
+            <span class="section_subtitle">My introduction</span>
+            <div class="about_container container grid">
+                <img src="assets/img/perfil.jpg" alt="" class="about_img">
+
+                <div class="about_data">
+                    <p class="about_description">
+                        
+                    </p>
+
+                    <div class="about_buttons">
+                        <a download="" href="assets/pdf/CV RIFAL ARDIANSYAH.pdf" target="_blank"
+                            class="button button--flex">
+                            Download CV <i class="uil uil-download-alt button_icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section_title">Skills</h2>
+            <span class="section_subtitle">My technical level</span>
+
+            <div class="skills_container container grid">
+                <!-- Kolom 1 -->
+                <div class="skills_column">
+                    <!-- Front-End Web Developer -->
+                    <div class="skills_content skills_close">
+                        <div class="skills_header">
+                            <i class="uil uil-brackets-curly skills_icon"></i>
+                            <div>
+                                <h1 class="skills_title">Front-End Web Developer</h1>
+                                <span class="skills_subtitle">Belajar lebih dari 3 tahun</span>
+                            </div>
+                            <i class="uil uil-angle-down skills_arrow"></i>
+                        </div>
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">HTML</h3>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_html"></span>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">CSS</h3>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_css"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">JavaScript</h3>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_css"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Designer -->
+                    <div class="skills_content skills_close">
+                        <div class="skills_header">
+                            <i class="uil uil-swatchbook skills_icon"></i>
+                            <div>
+                                <h1 class="skills_title">Designer</h1>
+                                <span class="skills_subtitle">Belajar lebih dari 1 tahun</span>
+                            </div>
+                            <i class="uil uil-angle-down skills_arrow"></i>
+                        </div>
+
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Photoshop</h3>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_photoshop"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Adobe Animated</h3>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_photoshop"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Kolom 2 -->
+                <div class="skills_column">
+                    <!-- Back-End Developer -->
+                    <div class="skills_content skills_close">
+                        <div class="skills_header">
+                            <i class="uil uil-server-network skills_icon"></i>
+                            <div>
+                                <h1 class="skills_title">Back-End Developer</h1>
+                                <span class="skills_subtitle">Belajar lebih dari 3 bulan</span>
+                            </div>
+                            <i class="uil uil-angle-down skills_arrow"></i>
+                        </div>
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">PHP</h3>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_php"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- 3D Modeling -->
+                    <div class="skills_content skills_close">
+                        <div class="skills_header">
+                            <i class="uil uil-cube skills_icon"></i>
+                            <div>
+                                <h1 class="skills_title">3D Modeling</h1>
+                                <span class="skills_subtitle">Belajar lebih dari 1 tahun</span>
+                            </div>
+                            <i class="uil uil-angle-down skills_arrow"></i>
+                        </div>
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Blender</h3>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_blender"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section">
+            <h2 class="section_title">Qualification</h2>
+            <span class="section_subtitle">My personal journey</span>
+
+            <div class="qualification_container container">
+                <div class="qualification_tabs">
+                    <div class="qualification_button button--flex" data-target='#education'>
+                        <i class="uil uil-graduation-cap qualification_icon"></i>
+                        Education
+                    </div>
+                    <div class="qualification_button button--flex" data-target='#work'>
+                        <i class="uil uil-briefcase-alt qualification_icon"></i>
+                        Certifications
+                    </div>
+                </div>
+                <div class="qualification_sections">
+
+                    <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                    <div class="qualification_content qualification_active" data-content id="education">
+                        <!--==================== QUALIFICATION 1 ====================-->
+                        <div class="qualification_data">
+                            <div>
+                                <h3 class="qualification_title">IPA</h3>
+                                <span class="qualification_subtitle">Sma Angkasa Lanud Husein</span>
+                                <div class="qualification_calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2016 - 2019
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION 2 ====================-->
+                        <div class="qualification_data">
+                            <div></div>
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification_title">Computer Science</h3>
+                                <span class="qualification_subtitle">Universitas Jenderal Achmad Yani</span>
+                                <div class="qualification_calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2020-2024
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                    <div class="qualification_content" data-content id="work">
+                        <!--==================== QUALIFICATION 1 ====================-->
+                        <div class="qualification_data">
+                            <div>
+                                <a href="https://www.dicoding.com/certificates/JMZV2GOYOZN9" target="_blank">
+                                    <h3 class="qualification_title">junior web programmer</h3>
+                                </a>
+                                <span class="qualification_subtitle">Badan Nasional Sertifikat profesi</span>
+                                <div class="qualification_calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Issued Jun 2024 Expires Jun 2027
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION 2 ====================-->
+                        <div class="qualification_data">
+                            <div></div>
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+
+                            <div>
+                                <a href="https://www.dicoding.com/certificates/MEPJLVDD4Z3V" target="_blank">
+                                    <h3 class="qualification_title">Starting JavaScript Programming</h3>
+                                </a>
+                                <span class="qualification_subtitle">Alison</span>
+                            </div>
+
+                        </div>
+
+                        <!--==================== QUALIFICATION 3 ====================-->
+                        <div class="qualification_data">
+                            <div>
+                                <a href="https://www.dicoding.com/certificates/KEXL4DL84XG2" target="_blank">
+                                    <h3 class="qualification_title">Beginner Web Development Processes and server setup</h3>
+                                </a>
+                                <span class="qualification_subtitle">Alison</span>
+                            </div>
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PORTFOLIO ====================-->
+<section class="portfolio section" id="portfolio">
+    <h2 class="section_title">Portofolio</h2>
+    <span class="section_subtitle">Most recent work</span>
+
+    <div class="portfolio_container container swiper-container">
+        <div class="swiper-wrapper">
+            <!--==================== PORTFOLIO ITEM 1 ====================-->
+            <div class="portfolio_content grid swiper-slide" data-index="0">
+                <img src="assets/img/Web Development/Web Disposisi/1.png" alt="" class="portfolio_img">
+                <div class="portfolio_data">
+                    <h3 class="portfolio_title">Web Development</h3>
+                    <p class="portfolio_description">Website adaptable to all devices, with UI components and animated interactions.</p>
+                    <button class="button button--flex button--small portfolio_button" onclick="openModal(0)">
+                        Selengkapnya
+                        <i class="uil uil-arrow-right button_icon"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!--==================== PORTFOLIO ITEM 2 ====================-->
+            <div class="portfolio_content grid swiper-slide" data-index="1">
+                <img src="assets/img/portfolio2.jpg" alt="" class="portfolio_img">
+                <div class="portfolio_data">
+                    <h3 class="portfolio_title">Brand Design</h3>
+                    <p class="portfolio_description">Website adaptable to all devices, with UI components and animated interactions.</p>
+                    <button class="button button--flex button--small portfolio_button" onclick="openModal(1)">
+                        Selengkapnya
+                        <i class="uil uil-arrow-right button_icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tombol Navigasi Swiper -->
+        <button class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+        </button>
+        <button class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+        </button>
+
+        <!-- Pagination Swiper -->
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+
+<!--==================== MODAL ====================-->
+<div id="portfolioModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <div class="modal-images-container">
+            <button class="modal-nav-button left" onclick="prevImage()">
+                <i class="uil uil-angle-left-b"></i>
+            </button>
+            <div class="modal-images" id="modalImages"></div>
+            <button class="modal-nav-button right" onclick="nextImage()">
+                <i class="uil uil-angle-right-b"></i>
+            </button>
+        </div>
+        <p id="modalDescription"></p>
+    </div>
+</div>
+
+
+<!--==================== CSS ====================-->
+<style>
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-images-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.modal-images img {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: none;
+}
+
+.modal-images img.active {
+    display: block;
+}
+
+.modal-title {
+    color: black;
+    font-size: 24px; /* Ukuran judul */
+    font-weight: bold;
+}
+
+.modal-description {
+    color: black;
+    font-size: 16px; /* Ukuran deskripsi */
+    font-weight: normal;
+}
+
+/* Tombol Navigasi */
+.modal-nav-button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-nav-button.left {
+    left: 10px;
+}
+
+.modal-nav-button.right {
+    right: 10px;
+}
+
+.modal-nav-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Tombol Close */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+</style>
+
+<!--==================== JAVASCRIPT ====================-->
+<script>
+const projects = [
+    {
+        title: "Web Development",
+        images: ["assets/img/Web Development/Web Disposisi/1.png", "assets/img/Web Development/Web Disposisi/2.png", "assets/img/Web Development/Web Disposisi/3.png"],
+        description: "Website Disposisi Surat ini dikembangkan menggunakan PHP dan CodeIgniter 4 untuk membantu instansi dalam mengelola surat masuk dan keluar secara efisien. Sistem ini memungkinkan pencatatan, pelacakan, serta distribusi surat secara digital, sehingga mempermudah proses administrasi dan meningkatkan transparansi dalam pengelolaan dokumen."
+    },
+    {
+        title: "Brand Design",
+        images: ["assets/img/portfolio2.jpg", "assets/img/portfolio2-2.jpg"],
+        description: "A complete brand identity project featuring custom typography and branding assets."
+    }
+];
+let currentImageIndex = 0;
+
+function openModal(index) {
+    const project = projects[index];
+    document.getElementById("modalTitle").innerText = project.title;
+    document.getElementById("modalTitle").classList.add("modal-title"); // Tambahkan kelas CSS
+    document.getElementById("modalDescription").innerText = project.description;
+    document.getElementById("modalDescription").classList.add("modal-description"); // Tambahkan kelas CSS
+    
+    const modalImages = document.getElementById("modalImages");
+    modalImages.innerHTML = "";
+    project.images.forEach((img, idx) => {
+        const imgElement = document.createElement("img");
+        imgElement.src = img;
+        if (idx === 0) imgElement.classList.add("active");
+        modalImages.appendChild(imgElement);
+    });
+    
+    currentImageIndex = 0;
+    document.getElementById("portfolioModal").style.display = "flex";
+}
+
+function closeModal() {
+    document.getElementById("portfolioModal").style.display = "none";
+}
+
+function prevImage() {
+    const images = document.querySelectorAll(".modal-images img");
+    images[currentImageIndex].classList.remove("active");
+    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+    images[currentImageIndex].classList.add("active");
+}
+
+function nextImage() {
+    const images = document.querySelectorAll(".modal-images img");
+    images[currentImageIndex].classList.remove("active");
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    images[currentImageIndex].classList.add("active");
+}
+</script>
+
+
+        <!--==================== PROJECT IN MIND ====================-->
+        <section class="project section">
+            <div class="project_bg">
+                <div class="project_container container grid">
+                    <div class="project_data">
+                        <h2 class="project_title">You have a new project</h2>
+                        <p class="project_description">Hubungi saya sekarang untuk membuat proyek baru Anda</p>
+                        <a href="#contact" class="button button--flex button--white">
+                            Contact me
+                            <i class="uil uil-message project_icon button_icon"></i>
+                        </a>
+                    </div>
+                    <img src="" alt="" class="project_img">
+                </div>
+            </div>
+
+        </section>
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section_title">Contact Me</h2>
+            <span class="section_subtitle">Get in touch</span>
+
+            <div class="contact_container container grid">
+                
+                    <div class="contact_information">
+                        <a href="https://www.instagram.com/rifal.ardi/" target="_blank">
+                            <i class="uil uil-instagram contact_icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="contact_information">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rifalardiansyah.work@gmail.com" target="_blank">
+                            <i class="uil uil-envelope contact_icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="contact_information">
+                        <a href="https://api.whatsapp.com/send/?phone=%2B6285863458110&text&app_absent=0" target="_blank">
+                            <i class="uil uil-whatsapp contact_icon"></i>
+                        </a>
+                    </div>
+         
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer_bg">
+            <div class="footer_container container grid">
+                <div>
+                    <h1 class="footer_title">Rifal Ardiansyah</h1>
+                    <span class="footer_subtitle">Front-End Web Developer</span>
+                </div>
+
+                <ul class="footer_links">
+                    <li>
+                        <a href="#skills" class="footer_link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="portofolio.html#portofolio" class="footer_link">Portofolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer_link">Contactme</a>
+                    </li>
+                </ul>
+
+                <div class="footer_socials">
+                    <a href="https://github.com/RifalArdiansyah" class="footer_social" target="_blank">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/rifal.ardi/" class="footer_social" target="_blank">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+
+                    <a href="https://linkedin.com/in/rifal-ardiansyah-a62373332" class="footer_social" target="_blank">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer_copy">Copyright &#169; 2025 Rifal Ardiansyah</p>
+        </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup_icon"></i>
+    </a>
+
+    <!--==================== SCROLL BAR ====================-->
+
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+<script>
+    var typed = new Typed(".input", {
+        strings: ["Front-End Web Developer", "Software Engineer", "UI/UX Designer", "Data Analysis"],
+        typeSpeed: 70, // Kecepatan mengetik
+        backSpeed: 55, // Kecepatan menghapus
+        loop: true // Looping teks
+    });
+</script>
+
+</body>
+
+</html>
